@@ -39,19 +39,8 @@ task2 = BashOperator(
 """4. Define task dependencies"""
 task1 >> task2
 #here task one needs to be executed before task 2
-"""
-When you start the Airflow Scheduler using the airflow scheduler, the DAGs will get scanned
-and execute your DAG in the order based on the tasks.
-"""
 
-"""5. create airflow user credentials"""
-"""
-airflow users create \ --username codeots \ --firstname street \ --lastname coder \ --role Admin \ --email thedatascape@gmail.com
-"""
-"""6. turn load examples off in airflow.cfg file"""
 
-"""7. Can't see Dags for task 1 & 2 in Airflow UI:
 
-This is because the airflow dags folder parameter needs to be adjusted with path 
-where your dags are located. This might be where docker-airflow comes in handy.
-"""
+
+
